@@ -16,6 +16,7 @@ def Rei_sum(f, a, b, n):
     sumDelta = 0.0
     x = a
     
+    # Translates the math function in argument (f)
     def function_gen(function, **kwargs):
         expr = sy.sympify(function)
         return expr.evalf(subs=kwargs)
