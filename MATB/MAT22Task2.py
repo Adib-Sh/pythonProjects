@@ -41,7 +41,7 @@ def calc(matrix, k):
     return np.array(z)
 
 
-Z = calc(m, 20)
+Z = calc(m, 10000)
 print(Z)
 # %%
 ax = plt.axes(projection='3d')
