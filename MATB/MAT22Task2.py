@@ -1,3 +1,4 @@
+# %%
 import numpy as np
 from numpy import linalg as LA
 
@@ -42,18 +43,17 @@ def calc(matrix, k):
 
 Z = calc(m, 20)
 print(Z)
-'''
+# %%
 ax = plt.axes(projection='3d')
-
 # Data for a three-dimensional line
-zline = cbasis[2]
-xline = cbasis[1]
-yline = cbasis[0]
+zline = Z[:, 0]
+xline = Z[:, 1]
+yline = Z[:, 2]
 ax.plot3D(xline, yline, zline, 'gray')
-
 # Data for three-dimensional scattered points
-zdata = cbasis[2]
-xdata = cbasis[1]
-ydata = cbasis[0]
-ax.scatter3D(xdata, ydata, zdata, c=zdata, cmap='Greens');
-'''
+zdata = Z[:, 0]
+xdata = Z[:, 1]
+ydata = Z[:, 2]
+ax.scatter3D(xdata, ydata, zdata, c=zdata, cmap='Greens')
+
+# %%
