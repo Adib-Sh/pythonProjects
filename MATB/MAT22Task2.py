@@ -45,11 +45,13 @@ Z = calc(m, 20)
 print(Z)
 # %%
 ax = plt.axes(projection='3d')
+'''
 # Data for a three-dimensional line
-zline = Z[:, 0]
-xline = Z[:, 1]
-yline = Z[:, 2]
+zline = Z[:, 2]
+xline = Z[:, 0]
+yline = Z[:, 1]
 ax.plot3D(xline, yline, zline, 'gray')
+'''
 # Data for three-dimensional scattered points
 zdata = Z[:, 0]
 xdata = Z[:, 1]
