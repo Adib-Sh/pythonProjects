@@ -36,26 +36,28 @@ for f in csv_files:
 df = pd.concat(li, axis=0, ignore_index=True)
 df = df.dropna()
     
-df = df[['participant','rank','NrmzMeanConfPair','NrmzMeanConfEvent','NrmzMeanConfDetail','Refi']]
+df = df[['participant','iEvent','CorScorePair','CorScoreEvent','CorScoreDetail','Refi2']]
 Refi_li = ['bpR','bpF','beR','weR']
-'''
+
+#for i in range(0,len(csv_files)):
 li1= []
 li2= []
 li3= []
-for item in Refi_li:
-    df1 = df.filter(item)
-    df1 = df.groupby('rank')['NrmzMeanConfPair'].mean().reset_index(name='NrmzMeanConfPairMean')
-    df1['Refi'] = item
-    df2 = df.groupby('rank')['NrmzMeanConfEvent'].mean().reset_index(name='NrmzMeanConfEventMean')
-    df2['Refi'] = item
-    df3 = df.groupby('rank')['NrmzMeanConfDetail'].mean().reset_index(name='NrmzMeanConfDetailMean')
-    df3['Refi'] = item
-    li1.append(df1)
-    li2.append(df2['NrmzMeanConfEventMean'])
-    li3.append(df3['NrmzMeanConfDetailMean'])
-liList = [li1,li2,li3]
-df3 = pd.concat((pd.Series(x) for x in liList), axis=1)  
-#df3 = pd.concat(li1, axis=0, ignore_index=True)
+df1 = df.groupby(['participant','iEvent'])['CorScorePair'].sum().reset_index(name='CorScorePair')
+CorScoreEvent = df.groupby(['participant','iEvent'])['CorScoreEvent'].sum()
+CorScoreDetail = df.groupby(['participant','iEvent'])['CorScoreDetail'].sum()
+df1.insert(3,'CorScoreEvent',CorScoreEvent.tolist())
+df1.insert(4,'CorScoreDetail',CorScoreDetail.tolist())
+
+
+
+
+
+
+
+
+'''
+
 #convert df to csv
 #df3.to_csv( "merged_refi2.csv", index=False, encoding='utf-8-sig')
 
