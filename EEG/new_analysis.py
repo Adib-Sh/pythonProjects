@@ -43,13 +43,22 @@ Refi_li = ['bpR','bpF','beR','weR']
 li1= []
 li2= []
 li3= []
-df1 = df.groupby(['participant','iEvent'])['CorScorePair'].sum().reset_index(name='CorScorePair')
-CorScoreEvent = df.groupby(['participant','iEvent'])['CorScoreEvent'].sum()
-CorScoreDetail = df.groupby(['participant','iEvent'])['CorScoreDetail'].sum()
-df1.insert(3,'CorScoreEvent',CorScoreEvent.tolist())
-df1.insert(4,'CorScoreDetail',CorScoreDetail.tolist())
+df1 = df.groupby(['participant','iEvent'])['CorScorePair'].sum().reset_index(name='eScorePair')
+eScoreEvent = df.groupby(['participant','iEvent'])['CorScoreEvent'].sum()
+eScoreDetail = df.groupby(['participant','iEvent'])['CorScoreDetail'].sum()
+df1.insert(3,'eScoreEvent',eScoreEvent.tolist())
+df1.insert(4,'eScoreDetail',eScoreDetail.tolist())
 
 
+#weScorePair = df.groupby(['participant','iEvent','Refi2'])['CorScoreEvent'].sum()
+
+ref = df.groupby(['participant','iEvent'])['Refi2'].value_counts()
+ref
+#ref = ref.reset_index(name='RefCount')
+#ref= ref.sort_values(by=['Refi2']).groupby(['participant','iEvent'])
+'''
+
+Z
 
 
 
@@ -60,7 +69,7 @@ df1.insert(4,'CorScoreDetail',CorScoreDetail.tolist())
 
 #convert df to csv
 #df3.to_csv( "merged_refi2.csv", index=False, encoding='utf-8-sig')
-
+'''
 df1 = df.groupby(['Refi','rank'])['NrmzMeanConfPair'].mean().reset_index(name='NrmzMeanConfPairMean')
 df2 = df.groupby(['Refi','rank'])['NrmzMeanConfPair'].sem().reset_index(name='NrmzMeanConfPairSEM')
 
