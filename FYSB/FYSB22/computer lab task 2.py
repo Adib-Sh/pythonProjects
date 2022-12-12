@@ -3,7 +3,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
 # Parameters
-s = 0
+s = 4
+
 ximax = int(s+8)
 ximin = -ximax
 Nsteps = 100*2*ximax
@@ -61,8 +62,7 @@ def findeig(n, iter=100000):
 
 
 print(findeig(0), findeig(1), findeig(2), findeig(3))
-plt.plot(xi, phi(Nsteps, findeig(0)))
+plt.plot(xi, phi(Nsteps, findeig(3)))
 plt.xlabel('x/a')
 plt.ylabel(r'$\psi$ (x/a)')
-plt.text(4.5, 3e9, 'Ground state', fontsize = 8)
-plt.text(4.5, 2.8e9, 's='+str(s), fontsize = 8)
+plt.title ('Third excited state and s='+str(s))
