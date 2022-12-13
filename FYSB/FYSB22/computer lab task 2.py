@@ -3,7 +3,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 # Parameters
-s = 7
+s = 0
 ximax = int(s+8)
 ximin = -ximax
 Nsteps = 100*2*ximax
@@ -61,7 +61,7 @@ def findeig(n, iter=100000):
 
 
 print(findeig(0), findeig(1), findeig(2), findeig(3),findeig(4))
-plt.plot(xi, phi(Nsteps, findeig(3)))
+plt.plot(xi, phi(Nsteps, findeig(2)))
 plt.xlabel('x/a')
 plt.ylabel(r'$\psi$ (x/a)')
-plt.title ('Zero nodes and s='+str(s))
+plt.title ('Two nodes and s='+str(s))
