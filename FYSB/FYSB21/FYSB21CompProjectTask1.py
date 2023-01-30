@@ -49,7 +49,7 @@ def animate(i):
     text.set_position((-3,1.1))
     line.set_data(X,y)
     return line, 
-
+'''
 anim = animation.FuncAnimation(fig, animate, init_func=init,
                                frames=150, interval=800, blit=True)
 
@@ -61,3 +61,4 @@ anim = animation.FuncAnimation(fig, animate, init_func=init,
 anim.save('task1gif',writer = 'ffmpeg',fps=10)
 
 fig.show()
+'''
