@@ -19,25 +19,32 @@ plt.plot(r,P1s**2,label='1s')
 plt.plot(r,P3s**2,label='3s')
 plt.plot(r,P3p**2,label='3p')
 plt.plot(r,P3d**2,label='3d')
-legend()
+plt.legend()
+plt.xlabel('r')
+plt.ylabel('$P_{nl}(r)$')
+plt.title('Radial density function for Z=1')
+
 
 #Potential 
 def V(r,Z,l):
     return -(Z/r) + (l*(l+1))/(2*(r**2))
 
-r1 = linspace(0.1,10,1000)
+r1 = linspace(0.1,15,1000)
 Vs = V(r1,Z,0)
 Vp = V(r1,Z,1)
 Vd = V(r1,Z,2)
-figure()
+plt.figure()
 plt.plot(r1,Vs,label='s')
 plt.plot(r1,Vp,label='p')
 plt.plot(r1,Vd,label='d')
-grid()
-ylim(-0.5,0.5)
-legend()
-'''
+plt.grid()
+plt.ylim(-0.5,0.5)
+plt.legend()
+plt.xlabel('r')
+plt.ylabel('Potential $V(r)$')
+plt.title('Effective potential for s, p, and d electrons')
 
+'''
 N = [1,2,3,6,9]
 Enrad = []
 Enlog = []
@@ -45,6 +52,9 @@ Enlog = []
 Pn = []
 rn = []
 Expn = []
+
+'''
+'''
 
 for n in N:
     l = 0
@@ -70,19 +80,23 @@ for row in range(len(table)):
     
 plt.table(cellText=cell_text, colLabels=table.columns, loc='center')
 plt.axis('off')
+df.to_csv('EnergyTable.csv', sep=',')
 
-'''
-figure()
+plt.figure()
 plt.plot(rn[0],Pn[0],label='1s')
 plt.plot(rn[1],Pn[1],label='2s')
 plt.plot(rn[2],Pn[2],label='3s')
 plt.plot(rn[3],Pn[3],label='6s')
 plt.plot(rn[4],Pn[4],label='9s')
-xlim(0,30)
-legend()
+plt.xlim(0,30)
+plt.legend()
+plt.xlabel('r')
+plt.ylabel('$P_{nl}(r)$')
+plt.title('Radial wavefunctions')
+
+
 '''
 plt.figure()
-'''
 plt.plot(rn[0],Pn[0]**2,label='1s')
 vlines(Expn[0],0,1)
 
@@ -96,7 +110,7 @@ plt.plot(rn[4],Pn[4]**2,label='9s')
 vlines(Expn[4],0,2)
 xlim(0,300)
 '''
-
+'''
 plt.legend()
 
 def Rie_sums(F):
@@ -113,3 +127,4 @@ R = Rie_sums(Rf.P2s)
 plt.plot(rn[0],Pn[0]**2,label='1s')
 plt.vlines(Expn[0],0,1)
 plt.vlines(R,0,1)
+'''
