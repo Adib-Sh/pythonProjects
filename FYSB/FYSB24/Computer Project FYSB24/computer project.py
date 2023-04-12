@@ -67,7 +67,7 @@ for n in N:
     #GPn.append(GP)
     Pn.append(P*sqrt(r))
     rn.append(r)
-    Expn.append(exprad)
+    Expn.append(explog)
     
 Enlst = Enrad + Enlog
 df = pd.DataFrame(Enlst)
@@ -81,7 +81,7 @@ for row in range(len(table)):
 plt.table(cellText=cell_text, colLabels=table.columns, loc='center')
 plt.axis('off')
 df.to_csv('EnergyTable.csv', sep=',')
-
+'''
 plt.figure()
 plt.plot(rn[0],Pn[0],label='1s')
 plt.plot(rn[1],Pn[1],label='2s')
@@ -93,24 +93,25 @@ plt.legend()
 plt.xlabel('r')
 plt.ylabel('$P_{nl}(r)$')
 plt.title('Radial wavefunctions')
-
-
 '''
+
+
 plt.figure()
-plt.plot(rn[0],Pn[0]**2,label='1s')
-vlines(Expn[0],0,1)
 
+plt.plot(rn[0],Pn[0]**2,label='1s')
+plt.vlines(Expn[0],0,1,color='red')
 plt.plot(rn[1],Pn[1]**2,label='2s')
-vlines(Expn[1],0,2)
+plt.vlines(Expn[1],0,2,color='red')
 plt.plot(rn[2],Pn[2]**2,label='3s')
-vlines(Expn[2],0,2)
+plt.vlines(Expn[2],0,2,color='red')
 plt.plot(rn[3],Pn[3]**2,label='6s')
-vlines(Expn[3],0,2)
+plt.vlines(Expn[3],0,2,color='red')
 plt.plot(rn[4],Pn[4]**2,label='9s')
-vlines(Expn[4],0,2)
-xlim(0,300)
-'''
-'''
+plt.vlines(Expn[4],0,2,color='red',label='Exp. value')
+plt.xlim(0,130)
+plt.xlabel('r')
+plt.ylabel('$P_{nl}(r)$')
+plt.title('Exp. value of different orbitals')
 plt.legend()
 
 def Rie_sums(F):
@@ -123,8 +124,11 @@ def Rie_sums(F):
     return I
 
 R = Rie_sums(Rf.P2s)
-
+plt.figure()
 plt.plot(rn[0],Pn[0]**2,label='1s')
-plt.vlines(Expn[0],0,1)
-plt.vlines(R,0,1)
-'''
+plt.vlines(Expn[0],0,1,color='red',label='Exp. value 1s')
+plt.xlabel('r')
+plt.ylabel('$P_{nl}(r)$')
+plt.vlines(R,0,1,color='green',label='Exp. value 2s')
+plt.title('Exp. value of 1s')
+plt.legend()
