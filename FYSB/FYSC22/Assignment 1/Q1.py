@@ -19,7 +19,7 @@ N = [A-Z[i] for i in range(0,len(Z))]
 
 # binding energy function
 def B(A,Z):
-    B = av*A - a_s*A**(2/3) - (ac*(Z*(Z-1)/A**(1/3))) - (aa*(((A-Z)-Z)**2/A))
+    B = av*A - a_s*A**(2/3) - (ac*(Z**2/A**(1/3))) - (aa*(((A-Z)-Z)**2/A))
     return B
 
 # list of Be for different Z
