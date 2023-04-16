@@ -49,6 +49,7 @@ print('G is:'+str(G(296,120)))
 
 
 def T(A,Z):
+
     f = Q(A,Z)*1.6022e-13/const.hbar
     P = np.exp(-2*G(A,Z))
     T = np.log(2)/((f*P)*c**2)
