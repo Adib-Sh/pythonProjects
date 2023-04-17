@@ -55,7 +55,7 @@ print('Q is:'+str(Q(296,120)))
 def G(A,Z):
 
     x = Q(A,Z)/B(A,Z)
-    G = 2 * a * (Z-2) * np.sqrt((2*m_alpha*c**2)/Q(A,Z))*(np.arccos(np.sqrt(x)) - np.sqrt(x-x**2))
+    G =  a * (Z-2) * np.sqrt((2*m_alpha*c**2)/Q(A,Z))*(np.arccos(np.sqrt(x)) - np.sqrt(x-x**2))
     #G = np.sqrt((2 * m_alpha*c**2) / hbarc**2) * (1 / (np.sqrt(Q(A,Z)))) * 1.44 * 2 * (Z-2) * (np.arccos(np.sqrt(x)) - np.sqrt(x*(1-x)))
     return G
 
@@ -89,4 +89,4 @@ print('For 292Og, T is:'+str(T(292,118)) + ' seconds')
 
 print('For 288Lv, Q is:'+str(Q(288,116)) + ' MeV')
 print('For 288Lv, T is:'+str(T(288,116)) + ' seconds')
-
+print('For 288Lv, T is:'+str(T(288,116)/(3600*24*365)) + ' years')
