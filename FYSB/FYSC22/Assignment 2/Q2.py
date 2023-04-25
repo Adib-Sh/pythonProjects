@@ -55,7 +55,7 @@ print('Q is:'+str(Q(296,120)))
 def G(A,Z):
 
     x = Q(A,Z)/B(A,Z)
-    G =  a * (Z-2) * np.sqrt((2*m_alpha*c**2)/Q(A,Z))*(np.arccos(np.sqrt(x)) - np.sqrt(x-x**2))
+    G =  2* a * (Z-2) * np.sqrt((2*m_alpha*c**2)/Q(A,Z))*(np.arccos(np.sqrt(x)) - np.sqrt(x-x**2))
     #G = np.sqrt((2 * m_alpha*c**2) / hbarc**2) * (1 / (np.sqrt(Q(A,Z)))) * 1.44 * 2 * (Z-2) * (np.arccos(np.sqrt(x)) - np.sqrt(x*(1-x)))
     return G
 
