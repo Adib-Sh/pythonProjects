@@ -25,12 +25,12 @@ m_n = 939.565/c**2
 # binding energy function
 def B(A,Z):
     # Calculate mass using Weizsäcker formula
-    delta = 0
-    if A % 2 == 1:
-        delta = a_p / A**(1/2)
-    elif Z % 2 == 0 and A % 2 == 0:
-        delta = -a_p / A**(1/2)
-    B = av*A - a_s*A**(2/3) - (ac*(Z*(Z-1)/A**(1/3))) - (aa*((((A-2*Z)**2)/A))) + (delta /np.sqrt(A))
+    #delta = 0
+    #if A % 2 == 1:
+    #    delta = a_p / A**(1/2)
+    #elif Z % 2 == 0 and A % 2 == 0:
+    #    delta = -a_p / A**(1/2)
+    B = av*A - a_s*A**(2/3) - (ac*(Z*(Z-1)/A**(1/3))) - (aa*((((A-2*Z)**2)/A))) #+ (delta /np.sqrt(A))
     return B
 print('B is:'+str(B(296,120)))
 
