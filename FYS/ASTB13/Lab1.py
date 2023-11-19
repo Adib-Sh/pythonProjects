@@ -8,7 +8,7 @@ from uncertainties.umath import *
 #-------------------------------------------------
 #Data
 v0  = ufloat(220,np.sqrt(220))
-R0 = ufloat(8.5e3,np.sqrt(8.5e3))
+R0 = ufloat(8.5e3,8.5e3*1/(3.6*3600))
 
 vmax=[57.68,73.72,84.02,139.9,157.67,132.93,124.58,97.74,
       99.76,91.62,91.22,61.26,48.14,39.84,36.77,37.98,33.49,29.35]
@@ -42,12 +42,13 @@ fit = np.poly1d(np.polyfit(r_n, v_n, 5)) #polyfit
 #Plot
 fig, ax1 = plt.subplots()
 #ax1.plot(r_n, v_n, '.')
-ax1.errorbar(r_n, v_n, yerr=v_s, xerr=r_s, ecolor='k', fmt='o', capthick=2)
+ax1.errorbar(r_n, v_n, xerr=r_s, ecolor='k', fmt='o', markersize=2, capsize=5, linewidth = 1, alpha=0.6)
 ax1.plot(r_n, fit(r_n),'red', label='Fit')
-ax1.plot(r_new,v_new,':', color='gray', label='Data')
-ax1.set_xlabel('Distances from the Galactic Center (kpc)')
+ax1.plot(r_new,v_new,':', color='green', label='Data')
+ax1.set_xlabel('Distances from the Galactic Center (pc)')
 ax1.set_ylabel('Maximum radial velocity (km/s))')
 title = ax1.set_title("Rotational curve of Milky Way")
 title.set_y(1.2)
 fig.subplots_adjust(top=0.85)
 ax1.legend(loc='upper left')
+plt.show()
