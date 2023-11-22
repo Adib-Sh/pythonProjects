@@ -1,0 +1,231 @@
+5deg
+---------------------------------------------------------
+Maximum Probable Velocity = 57.68705821522891
+Estimated std for peak 1 = 17.271218580083925
+---------------------------------------------------------
+Maximum Probable Velocity = 57.68705821522891
+Estimated std for peak 1 = 17.271218580083925
+
+10deg
+---------------------------------------------------------
+Maximum Probable Velocity = 73.72520621837533
+Estimated std for peak 1 = 20.30104802839379
+---------------------------------------------------------
+Maximum Probable Velocity = 73.72520621837533
+Estimated std for peak 1 = 20.30104802839379
+
+15deg
+Estimated height for peak 1 = 69.75259980578143
+Estimated centre for peak 1 = 15.989424214271931
+Estimated std for peak 1 = 22.675899411192308
+-------------------------------------------------
+Maximum Probable Velocity = 84.01712244784886
+
+20deg
+Estimated height for peak 1 = 62.771299063174325
+Estimated centre for peak 1 = 14.864552362862888
+Estimated std for peak 1 = 21.85963291487989
+-------------------------------------------------
+Estimated height for peak 2 = 18.844132779734593
+Estimated centre for peak 2 = 80.16168750087375
+Estimated std for peak 2 = 24.11404262627847
+-------------------------------------------------
+Maximum Probable Velocity = 152.50381537970918
+
+25deg
+Estimated height for peak 1 = 25.366359828302638
+Estimated centre for peak 1 = -36.30082376110095
+Estimated std for peak 1 = 9.27875505071475
+-------------------------------------------------
+Estimated height for peak 2 = 28.751839487919195
+Estimated centre for peak 2 = 1.4463359876464894
+Estimated std for peak 2 = 2.4775308087872525
+-------------------------------------------------
+Estimated height for peak 3 = 57.53883838949754
+Estimated centre for peak 3 = 16.7886130685277
+Estimated std for peak 3 = 19.90126233720632
+-------------------------------------------------
+Estimated height for peak 4 = 34.41554473774282
+Estimated centre for peak 4 = 79.90249047022058
+Estimated std for peak 4 = 25.92289089763803
+-------------------------------------------------
+Maximum Probable Velocity = 157.67116316313468
+
+30deg
+Estimated height for peak 1 = 25.200121865434635
+Estimated centre for peak 1 = -35.91460770580222
+Estimated std for peak 1 = 12.690604590425982
+-------------------------------------------------
+Estimated height for peak 2 = 59.34445415663366
+Estimated centre for peak 2 = 9.643914404643423
+Estimated std for peak 2 = 10.70662437437121
+-------------------------------------------------
+Estimated height for peak 3 = 46.03367677365526
+Estimated centre for peak 3 = 39.324444136389914
+Estimated std for peak 3 = -20.57944726051067
+-------------------------------------------------
+Estimated height for peak 4 = 34.29463361353022
+Estimated centre for peak 4 = 87.55042911058793
+Estimated std for peak 4 = 15.126629465902372
+-------------------------------------------------
+Maximum Probable Velocity = 132.93031750829505
+
+35deg
+Estimated height for peak 1 = 24.575229010658
+Estimated centre for peak 1 = -47.31458830088982
+Estimated std for peak 1 = 10.624218171904639
+-------------------------------------------------
+Estimated height for peak 2 = 74.59984017759028
+Estimated centre for peak 2 = 33.043825957876486
+Estimated std for peak 2 = 30.52080855898899
+-------------------------------------------------
+Maximum Probable Velocity = 124.60625163484346
+
+40deg
+Estimated height for peak 1 = 30.093676967485237
+Estimated centre for peak 1 = -44.54959626042374
+Estimated std for peak 1 = -16.92641729293699
+-------------------------------------------------
+Estimated height for peak 2 = 54.45650469161345
+Estimated centre for peak 2 = 5.229017706161833
+Estimated std for peak 2 = 5.678068208836717
+-------------------------------------------------
+Estimated height for peak 3 = 74.71678118395481
+Estimated centre for peak 3 = 29.46820536035797
+Estimated std for peak 3 = 14.21082853211958
+-------------------------------------------------
+Estimated height for peak 4 = 54.23192051402779
+Estimated centre for peak 4 = 62.524658602682095
+Estimated std for peak 4 = 11.740107741643639
+-------------------------------------------------
+Maximum Probable Velocity = 97.744981827613
+
+45deg
+Estimated height for peak 1 = 32.75149313087874
+Estimated centre for peak 1 = -50.30636707328156
+Estimated std for peak 1 = 14.330190987961805
+-------------------------------------------------
+Estimated height for peak 2 = 73.40301357390423
+Estimated centre for peak 2 = 10.379911307877256
+Estimated std for peak 2 = 11.480479377008475
+-------------------------------------------------
+Estimated height for peak 3 = 75.20742336011347
+Estimated centre for peak 3 = 48.79888750560778
+Estimated std for peak 3 = 16.988244686349095
+-------------------------------------------------
+Maximum Probable Velocity = 99.76362156465507
+
+50deg
+Estimated height for peak 1 = 31.609928204792997
+Estimated centre for peak 1 = -52.701004038999244
+Estimated std for peak 1 = 15.057223462405545
+-------------------------------------------------
+Estimated height for peak 2 = 80.83546575283592
+Estimated centre for peak 2 = 8.311963300994352
+Estimated std for peak 2 = 10.596243971318
+-------------------------------------------------
+Estimated height for peak 3 = 73.08479662563927
+Estimated centre for peak 3 = 44.589299724980464
+Estimated std for peak 3 = 15.67974517552039
+-------------------------------------------------
+Maximum Probable Velocity = 91.62853525154163
+
+55deg
+Estimated height for peak 1 = 34.20377381237596
+Estimated centre for peak 1 = -61.69055264962833
+Estimated std for peak 1 = 13.170709938812918
+-------------------------------------------------
+Estimated height for peak 2 = 83.23707085795078
+Estimated centre for peak 2 = 16.442258075012127
+Estimated std for peak 2 = 21.594089991953165
+-------------------------------------------------
+Maximum Probable Velocity = 81.22452805087161
+
+60deg
+Estimated height for peak 1 = 39.12776185918416
+Estimated centre for peak 1 = -66.26236069762228
+Estimated std for peak 1 = 13.058299135658617
+-------------------------------------------------
+Estimated height for peak 2 = 95.87423347466861
+Estimated centre for peak 2 = 12.172665617941103
+Estimated std for peak 2 = 16.363548444645396
+-------------------------------------------------
+Maximum Probable Velocity = 61.26331095187729
+
+65deg
+Estimated height for peak 1 = 46.83646163429689
+Estimated centre for peak 1 = -67.32539341843788
+Estimated std for peak 1 = 10.290466744643892
+-------------------------------------------------
+Estimated height for peak 2 = 103.5262849021377
+Estimated centre for peak 2 = 7.723484215056194
+Estimated std for peak 2 = 13.472427101164651
+-------------------------------------------------
+Maximum Probable Velocity = 48.14076551855015
+
+70deg
+Estimated height for peak 1 = 38.699967656972824
+Estimated centre for peak 1 = -64.0517041978122
+Estimated std for peak 1 = 21.803142315544083
+-------------------------------------------------
+Estimated height for peak 2 = 115.82647198368471
+Estimated centre for peak 2 = 3.101467157214199
+Estimated std for peak 2 = 12.24694096761501
+-------------------------------------------------
+Maximum Probable Velocity = 39.842290060059234
+
+75deg
+Estimated height for peak 1 = 39.05619604607008
+Estimated centre for peak 1 = -61.46081764490709
+Estimated std for peak 1 = 30.081749151596387
+-------------------------------------------------
+Estimated height for peak 2 = 118.9592178454969
+Estimated centre for peak 2 = 0.94754210482762
+Estimated std for peak 2 = 11.942401857854119
+-------------------------------------------------
+Maximum Probable Velocity = 36.77474767838997
+
+80deg
+Estimated height for peak 1 = 43.585738170133645
+Estimated centre for peak 1 = -77.03774829666474
+Estimated std for peak 1 = 12.971070425794471
+-------------------------------------------------
+Estimated height for peak 2 = 41.5201307982607
+Estimated centre for peak 2 = -40.21422427649807
+Estimated std for peak 2 = 11.63679502188633
+-------------------------------------------------
+Estimated height for peak 3 = 124.56501923818527
+Estimated centre for peak 3 = 0.21904528537376364
+Estimated std for peak 3 = 12.588518520362042
+-------------------------------------------------
+Maximum Probable Velocity = 37.98460084645989
+
+85deg
+Estimated height for peak 1 = 48.262945585611526
+Estimated centre for peak 1 = -78.5866371942214
+Estimated std for peak 1 = 13.740010779213527
+-------------------------------------------------
+Estimated height for peak 2 = 46.62002208361374
+Estimated centre for peak 2 = -43.47915964356049
+Estimated std for peak 2 = 9.230477261606254
+-------------------------------------------------
+Estimated height for peak 3 = 101.62626606719934
+Estimated centre for peak 3 = -4.373807422084608
+Estimated std for peak 3 = 12.621221818705067
+-------------------------------------------------
+Maximum Probable Velocity = 33.48985803403059
+
+90deg
+Estimated height for peak 1 = 41.35964039533166
+Estimated centre for peak 1 = -81.747541229005
+Estimated std for peak 1 = 15.757153630629276
+-------------------------------------------------
+Estimated height for peak 2 = 37.93979784374232
+Estimated centre for peak 2 = -43.47561912207561
+Estimated std for peak 2 = 19.510446756576947
+-------------------------------------------------
+Estimated height for peak 3 = 88.4104608283532
+Estimated centre for peak 3 = -4.810340188755606
+Estimated std for peak 3 = 11.238622512705591
+-------------------------------------------------
+Maximum Probable Velocity = 28.90552734936117

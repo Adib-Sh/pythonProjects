@@ -10,11 +10,14 @@ from uncertainties.umath import *
 v0  = ufloat(220,np.sqrt(220))
 R0 = ufloat(8.5e3,8.5e3*1/(3.6*3600))
 
-vmax=[57.68,73.72,84.02,139.9,157.67,132.93,124.58,97.74,
-      99.76,91.62,91.22,61.26,48.14,39.84,36.77,37.98,33.49,29.35]
-vmax=[ufloat(x,np.sqrt(x)) for x in vmax]
+v=[57.68,73.72,84.02,152.50,157.67,132.93,124.60,97.74,
+      99.76,91.62,81.22,61.26,48.14,39.84,36.77,37.98,33.49,28.90]
+v_std = [17.27,20.30,22.67,24.11,25.92,15.12,30.52,11.74,16.98,15.67,21.59,16.36,13.47,
+       12.24,11.94,12.58,12.62,11.23]
+
+vmax=[ufloat(v[i],v_std[i]) for i in range(0,len(v))]
 l = list(range(5,95,5))
-l=[ufloat(math.radians(x),0.2) for x in l]
+l=[ufloat(math.radians(x),math.radians(0.2)) for x in l]
 r = []
 for i in range(0,len(l)):
     rl = R0*sin(l[i])
@@ -42,11 +45,11 @@ fit = np.poly1d(np.polyfit(r_n, v_n, 5)) #polyfit
 #Plot
 fig, ax1 = plt.subplots()
 #ax1.plot(r_n, v_n, '.')
-ax1.errorbar(r_n, v_n, xerr=r_s, ecolor='k', fmt='o', markersize=2, capsize=5, linewidth = 1, alpha=0.6)
+ax1.errorbar(r_n, v_n, xerr=r_s, yerr=v_s, ecolor='k', fmt='o', markersize=2, capsize=5, linewidth = 1, alpha=0.6)
 ax1.plot(r_n, fit(r_n),'red', label='Fit')
 ax1.plot(r_new,v_new,':', color='green', label='Data')
 ax1.set_xlabel('Distances from the Galactic Center (pc)')
-ax1.set_ylabel('Maximum radial velocity (km/s))')
+ax1.set_ylabel('Maximum radial velocity LSR (km/s))')
 title = ax1.set_title("Rotational curve of Milky Way")
 title.set_y(1.2)
 fig.subplots_adjust(top=0.85)
