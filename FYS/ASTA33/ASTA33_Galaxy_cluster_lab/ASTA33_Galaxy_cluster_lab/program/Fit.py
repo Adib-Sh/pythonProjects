@@ -2,7 +2,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 ### Read in data.
-datadir = './all.dat'
+datadir = './yellow-1.dat'
 data = np.loadtxt(datadir)
 mag = data[:,0] # Magnitude.
 emag = data[:,1] # Error in magnitude.
@@ -31,7 +31,7 @@ plt.errorbar(mag,col,xerr=emag,yerr=ecol,color='r', fmt=' ',
 ecolor='k', elinewidth=1, capsize=2)
 # Plot fitted line.
 x = np.linspace(min(mag), max(mag)) # To plot fit.
-#plt.plot(x, p1*x+p2, '-r', lw=2, alpha=0.7)
+plt.plot(x, p1*x+p2, '-r', lw=2, alpha=0.7)
 plt.title('Plot of all objects selected')
 # Finalise plot.
 plt.tight_layout()
