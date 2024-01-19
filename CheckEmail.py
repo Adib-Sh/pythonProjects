@@ -17,7 +17,7 @@ if check(email)==False:
     print('WRONG')
 else:
     print('OK')
-print(email)
+
 
    
     
